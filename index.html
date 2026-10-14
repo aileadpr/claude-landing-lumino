@@ -380,10 +380,6 @@
         <div class="tot"><span>Total</span><span id="sumTot"></span></div>
       </div>
 
-      <label class="consent">
-        <input type="checkbox" id="consent" required>
-        <span>I agree to the <a href="#" data-link="terms" target="_blank">Terms of Service</a> and have read the <a href="#" data-link="privacy" target="_blank">Privacy Policy</a>. My data is used only to process and ship my order.</span>
-      </label>
 
       <div class="form-err" id="formErr">Please fill in all required fields.</div>
       <button type="submit" class="btn" id="submitBtn">Continue to secure payment →</button>
@@ -537,9 +533,9 @@ $("#orderForm").addEventListener("submit", async e => {
     if (bad) ok = false;
   });
   if (!ok) {
-    err.textContent = $("#consent").checked ? "Please fill in all required fields correctly." : "Please fill in all required fields and accept the terms.";
+    err.textContent = "Please fill in all required fields correctly.";
     err.style.display = "block";
-    f.querySelector(".err, #consent:not(:checked)")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    f.querySelector(".err")?.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
   err.style.display = "none";
