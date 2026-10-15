@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dual-Screen Handheld Console</title>
-<meta name="description" content="Dual-screen handheld game console: 7-inch Full HD 120Hz main screen, second touch screen, Hall-effect joysticks, Android, fan cooling. Tracked shipping, 30-day money-back guarantee, 2-year warranty.">
+<title>Foldable Fitness Trampoline</title>
+<meta name="description" content="Foldable fitness trampoline with 5-level adjustable handrail: 200 kg capacity, steel frame, low-impact home cardio, folds in 3 steps. Tracked shipping, 30-day money-back guarantee.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,8 +20,8 @@
 
 <style>
   :root{
-    --bg:#ffffff; --bg2:#f6f3fc; --card:#ffffff; --line:#e4dcf3;
-    --text:#1a1625; --muted:#6b6480; --accent:#6a3fd6; --accent2:#9a6bff;
+    --bg:#ffffff; --bg2:#fdf5ef; --card:#ffffff; --line:#f0e1d5;
+    --text:#1a1625; --muted:#6b6480; --accent:#ee6420; --accent2:#ff9350;
     --ok:#22c55e; --radius:16px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -42,23 +42,23 @@
   /* buttons */
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:460px;padding:18px 24px;border:0;border-radius:14px;cursor:pointer;
        background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-family:"Barlow Condensed",sans-serif;font-size:24px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-decoration:none;
-       box-shadow:0 10px 30px rgba(106,63,214,.30);transition:transform .15s ease, box-shadow .15s ease;animation:pulse 2.4s infinite}
-  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(106,63,214,.45)}
+       box-shadow:0 10px 30px rgba(238,100,32,.30);transition:transform .15s ease, box-shadow .15s ease;animation:pulse 2.4s infinite}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(238,100,32,.45)}
   .btn:active{transform:translateY(0)}
-  @keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(106,63,214,.30)}50%{box-shadow:0 10px 42px rgba(106,63,214,.50)}}
+  @keyframes pulse{0%,100%{box-shadow:0 10px 30px rgba(238,100,32,.30)}50%{box-shadow:0 10px 42px rgba(238,100,32,.50)}}
   .btn-sub{font-size:13px;color:var(--muted);margin-top:10px;text-align:center}
   .center{text-align:center}
   .cta-block{display:flex;flex-direction:column;align-items:center;margin-top:28px}
 
   /* image slots */
-  .img-slot{position:relative;border-radius:var(--radius);overflow:hidden;background:radial-gradient(circle at 30% 20%,#faf8ff,#ebe3fb 70%);border:1px solid var(--line);aspect-ratio:1/1}
+  .img-slot{position:relative;border-radius:var(--radius);overflow:hidden;background:radial-gradient(circle at 30% 20%,#fffaf6,#f6e7dc 70%);border:1px solid var(--line);aspect-ratio:1/1}
   .img-slot img{width:100%;height:100%;object-fit:contain;background:#fff;padding:12px}
   .img-slot.has-img{background:#fff}
-  .hero .img-slot{aspect-ratio:4/3}
+  .hero .img-slot{aspect-ratio:1/1}
   .swatches{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
   .sw{flex:1 1 0;min-width:70px;border:2px solid var(--line);border-radius:12px;background:#fff;padding:6px;cursor:pointer;text-align:center;font:inherit;font-size:12px;font-weight:600;color:var(--text);transition:border-color .15s}
   .sw img{width:100%;aspect-ratio:3/2;object-fit:contain;display:block;margin-bottom:4px}
-  .sw.on{border-color:var(--accent);background:rgba(154,107,255,.08)}
+  .sw.on{border-color:var(--accent);background:rgba(255,147,80,.08)}
   .color-opts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px}
   @media(min-width:760px){.color-opts{grid-template-columns:repeat(4,1fr)}}
   .img-slot .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#a79fbd;font-size:14px}
@@ -102,7 +102,7 @@
   .cmp tr:last-child td{border-bottom:0}
   .cmp td:first-child,.cmp th:first-child{text-align:left}
   .cmp th{font-family:"Barlow Condensed",sans-serif;font-size:18px;text-transform:uppercase}
-  .cmp .us{background:rgba(154,107,255,.14)}
+  .cmp .us{background:rgba(255,147,80,.14)}
   .y{color:var(--ok);font-weight:800;font-size:18px}.n{color:#a79fbd;font-weight:800;font-size:18px}
 
   /* specs */
@@ -140,7 +140,7 @@
   .qty-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .qty-opts label{margin:0;cursor:pointer;border:2px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:2px;transition:border-color .15s}
   .qty-opts input{display:none}
-  .qty-opts label:has(input:checked){border-color:var(--accent);background:rgba(154,107,255,.12)}
+  .qty-opts label:has(input:checked){border-color:var(--accent);background:rgba(255,147,80,.12)}
   .qty-opts b{font-size:16px}
   .qty-opts small{color:var(--muted)}
   .summary{border-top:1px dashed var(--line);margin-top:18px;padding-top:16px;display:grid;gap:8px;font-size:15px}
@@ -186,21 +186,21 @@
 <!-- ============ HERO ============ -->
 <header class="hero">
   <div class="wrap hero-grid">
-    <div><div class="img-slot" data-img="hero"></div><div class="swatches" id="heroSwatches"></div></div>
+    <div class="img-slot" data-img="hero"></div>
     <div>
-      <div class="rating">🎮 Two screens · One pocket console</div>
-      <h1>Two screens.<br><span class="accent">Endless games.</span></h1>
-      <p class="lead">The dual-screen handheld console that folds into your pocket. A big main display for your games, a second touch screen for maps, menus and controls, and a classic clamshell design that protects both when you close it.</p>
+      <div class="rating">🏃 Home cardio · Low impact · Fun</div>
+      <h1>Burn calories.<br><span class="accent">Have fun doing it.</span></h1>
+      <p class="lead">The foldable fitness trampoline with an adjustable handrail. A full-body, low-impact cardio workout in your living room, in just 10 minutes a day. Folds in 3 steps and slides under your bed or sofa.</p>
       <div class="price-row">
         <span class="price" data-price></span>
         <span class="compare" data-compare></span>
         <span class="save" data-save></span>
       </div>
       <ul class="checks">
-        <li>7-inch Full HD main screen with smooth 120Hz gameplay</li>
-        <li>Second touch screen for maps, menus, stats and shortcuts</li>
-        <li>Hall-effect joysticks with RGB light rings: no stick drift</li>
-        <li>Android system: play thousands of games, stream and browse</li>
+        <li>Supports up to 200 kg with a thickened steel frame</li>
+        <li>Foam handrail with 5 height levels for balance and safety</li>
+        <li>Low-impact bounce that's gentle on knees and joints</li>
+        <li>Folds in 3 steps to store under the bed, sofa or in the car</li>
       </ul>
       <button class="btn buy" data-cta="hero">Buy now →</button>
       <div class="trust-row">
@@ -215,16 +215,16 @@
 <!-- ============ PROBLEM ============ -->
 <section class="problem">
   <div class="wrap center">
-    <h2>Gaming on your phone isn't gaming</h2>
-    <p class="muted">Touch controls, notifications and a dying battery ruin every session.</p>
+    <h2>Workouts you never stick to?</h2>
+    <p class="muted">Most people quit because exercise feels boring, painful or impossible to fit in.</p>
     <div class="pain-grid" style="text-align:left">
-      <div class="pain"><b>👆</b>Your thumbs cover half the screen with touch controls</div>
-      <div class="pain"><b>🔔</b>Calls and notifications interrupting every match</div>
-      <div class="pain"><b>🪫</b>Your phone battery dead before the end of the day</div>
-      <div class="pain"><b>🧳</b>Big handhelds too heavy and bulky to carry around</div>
+      <div class="pain"><b>⏰</b>No time to get to the gym</div>
+      <div class="pain"><b>🦵</b>Running hurts your knees and back</div>
+      <div class="pain"><b>😴</b>Cardio machines so boring you give up after a week</div>
+      <div class="pain"><b>🏠</b>No space at home for bulky equipment</div>
     </div>
     <div class="cta-block">
-      <button class="btn buy" data-cta="problem">I want a real console →</button>
+      <button class="btn buy" data-cta="problem">I want a workout I enjoy →</button>
     </div>
   </div>
 </section>
@@ -232,40 +232,62 @@
 <!-- ============ FEATURES ============ -->
 <section>
   <div class="wrap center">
-    <h2>Built for play. <span class="accent">Made to carry.</span></h2>
-    <p class="muted">The feel of a real console in a fold-up design that fits in your pocket.</p>
+    <h2>Small trampoline. <span class="accent">Big results.</span></h2>
+    <p class="muted">Rebounding works your legs, core and heart while it feels like play.</p>
     <div class="feat-grid" style="text-align:left">
-      <div class="feat"><div class="ico">🖥️</div><h3>Dual screens</h3><p>A 7-inch Full HD main display for the game and a second touch screen below for maps, inventory, menus or performance stats.</p></div>
-      <div class="feat"><div class="ico">⚡</div><h3>120Hz smooth play</h3><p>High refresh rate for fluid motion in fast games, with a one-tap performance mode right on the second screen.</p></div>
-      <div class="feat"><div class="ico">🕹️</div><h3>Hall-effect sticks</h3><p>Magnetic joysticks that don't wear out or drift, surrounded by customizable RGB light rings.</p></div>
-      <div class="feat"><div class="ico">❄️</div><h3>Active cooling</h3><p>A built-in fan keeps temperatures low during long sessions, so performance stays steady.</p></div>
-      <div class="feat"><div class="ico">📂</div><h3>Clamshell design</h3><p>Fold it closed and both screens are protected. Open it and you're playing in a second.</p></div>
-      <div class="feat"><div class="ico">🔋</div><h3>All-day battery</h3><p>A large rechargeable battery for hours of play, with USB-C fast charging.</p></div>
+      <div class="feat"><div class="ico">🔥</div><h3>10-minute workouts</h3><p>Short, intense sessions of jumping, jogging and squats get your heart rate up and make you sweat fast.</p></div>
+      <div class="feat"><div class="ico">🦵</div><h3>Gentle on joints</h3><p>The elastic mat absorbs the impact that running on hard ground puts on your knees, ankles and back.</p></div>
+      <div class="feat"><div class="ico">🤸</div><h3>Adjustable handrail</h3><p>Foam-covered bar with 5 height levels, from about 84 to 116 cm, to hold on to for balance and stability.</p></div>
+      <div class="feat"><div class="ico">💪</div><h3>200 kg capacity</h3><p>Thickened steel frame and heavy-duty drum springs for a stable, safe bounce for every body.</p></div>
+      <div class="feat"><div class="ico">📦</div><h3>3-step folding</h3><p>Unlock, fold in half, fold again. It stores flat in about 89 × 41 cm.</p></div>
+      <div class="feat"><div class="ico">🛡️</div><h3>Durable mat</h3><p>Wear-resistant elastic fabric and a padded cover over the springs for safer landings.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ SPLIT: WHITE ============ -->
+<!-- ============ SPLIT: WORKOUT ============ -->
 <section style="background:var(--bg2)">
   <div class="wrap split">
-    <div class="img-slot" data-img="sound"></div>
+    <div class="img-slot" data-img="workout"></div>
     <div>
-      <h2>Your second screen<br><span class="accent">changes everything.</span></h2>
-      <p>Keep the game full-screen on top and put everything else below: the map, your inventory, a walkthrough, a chat or live FPS, temperature and fan stats.</p>
-      <p>Tap to switch performance modes, remap controls or record macros without ever pausing the game.</p>
-      <button class="btn buy" data-cta="sound" style="margin-top:10px">Get yours now →</button>
+      <h2>10 minutes.<br><span class="accent">Real sweat.</span></h2>
+      <p>Jumping on a trampoline is one of the most efficient cardio workouts you can do at home. Put on music, bounce, jog in place or add squats and twists, and feel your legs and core working in minutes.</p>
+      <p>It's so fun you'll actually want to do it every day.</p>
+      <button class="btn buy" data-cta="workout" style="margin-top:10px">Get yours now →</button>
     </div>
   </div>
 </section>
 
-<!-- ============ SPLIT: BLACK ============ -->
+<!-- ============ SPLIT: HEIGHT ============ -->
 <section>
   <div class="wrap split rev">
-    <div class="img-slot" data-img="desk"></div>
+    <div class="img-slot" data-img="height"></div>
     <div>
-      <h2>Pocket size.<br><span class="accent">Console feel.</span></h2>
-      <p>Full-size ABXY buttons, a precise D-pad, shoulder buttons and triggers, plus vibration feedback and stereo speakers. Everything you expect from a home console, folded into a device you can take anywhere.</p>
-      <p>Choose your style: Transparent Purple, Arctic White or Shadow Black.</p>
+      <h2>A handrail<br><span class="accent">for every height.</span></h2>
+      <p>Set the foam handrail to one of 5 levels with the adjustable knobs. Hold it for balance when you start, or use it for support during harder moves. Perfect for beginners, older users and anyone who wants extra stability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPLIT: CAPACITY ============ -->
+<section style="background:var(--bg2)">
+  <div class="wrap split">
+    <div class="img-slot" data-img="capacity"></div>
+    <div>
+      <h2>Built strong.<br><span class="accent">Built for you.</span></h2>
+      <p>The thickened steel frame and bold drum springs support up to 200 kg, so every bounce feels solid and stable. Non-slip feet keep it firmly in place on your floor.</p>
+      <button class="btn buy" data-cta="capacity" style="margin-top:10px">Buy now →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPLIT: FOLD ============ -->
+<section>
+  <div class="wrap split rev">
+    <div class="img-slot" data-img="fold"></div>
+    <div>
+      <h2>Folds away<br><span class="accent">in seconds.</span></h2>
+      <p>No space? No problem. Fold it in 3 steps and slide it under your bed, under the sofa or into your car boot. Take it out when you train, put it away when you're done.</p>
     </div>
   </div>
 </section>
@@ -273,15 +295,14 @@
 <!-- ============ COMPARISON ============ -->
 <section style="background:var(--bg2)">
   <div class="wrap">
-    <h2 class="center">Why not just use your phone?</h2>
+    <h2 class="center">Why a fitness trampoline?</h2>
     <table class="cmp">
-      <tr><th></th><th class="us">This console</th><th>Smartphone</th></tr>
-      <tr><td>Physical buttons and joysticks</td><td class="us y">✓</td><td class="n">✕</td></tr>
-      <tr><td>Second screen for maps and menus</td><td class="us y">✓</td><td class="n">✕</td></tr>
-      <tr><td>Drift-free Hall-effect sticks</td><td class="us y">✓</td><td class="n">✕</td></tr>
-      <tr><td>Active fan cooling</td><td class="us y">✓</td><td class="n">✕</td></tr>
-      <tr><td>No calls or notifications mid-game</td><td class="us y">✓</td><td class="n">✕</td></tr>
-      <tr><td>Phone battery saved for the day</td><td class="us y">✓</td><td class="n">✕</td></tr>
+      <tr><th></th><th class="us">Trampoline</th><th>Gym</th><th>Running</th></tr>
+      <tr><td>Train at home, any time</td><td class="us y">✓</td><td class="n">✕</td><td class="n">✕</td></tr>
+      <tr><td>Low impact on joints</td><td class="us y">✓</td><td class="y">✓</td><td class="n">✕</td></tr>
+      <tr><td>No monthly fee</td><td class="us y">✓</td><td class="n">✕</td><td class="y">✓</td></tr>
+      <tr><td>Works in any weather</td><td class="us y">✓</td><td class="y">✓</td><td class="n">✕</td></tr>
+      <tr><td>Fun enough to stick with</td><td class="us y">✓</td><td class="n">✕</td><td class="n">✕</td></tr>
     </table>
     <div class="cta-block">
       <button class="btn buy" data-cta="compare">Buy now →</button>
@@ -320,11 +341,11 @@
   <div class="wrap" style="max-width:760px">
     <h2 class="center">FAQ</h2>
     <div class="faq">
-      <details><summary>What games can I play?</summary><p>It runs Android, so you can install games from the Play Store, use cloud gaming and streaming apps, and play your own compatible game library. The physical controls work with any game that supports a controller.</p></details>
-      <details><summary>What is the second screen for?</summary><p>It's a touch screen you can use for maps, inventory, menus, a walkthrough or a chat while the game stays full-screen on top. It also shows FPS, temperature and fan speed, and gives one-tap access to performance modes and control settings.</p></details>
-      <details><summary>Will the joysticks drift?</summary><p>No. The Hall-effect joysticks use magnets instead of physical contacts, so they don't wear out and don't develop the drift common on traditional sticks.</p></details>
-      <details><summary>Can I connect it to Wi-Fi and Bluetooth?</summary><p>Yes. It has Wi-Fi for downloads and streaming and Bluetooth for headphones and controllers.</p></details>
-      <details><summary>How do I charge it?</summary><p>Through the USB-C port with fast charging. You can keep playing while it charges.</p></details>
+      <details><summary>Is it suitable for beginners?</summary><p>Yes. The handrail gives you support and balance, and you can start with gentle bouncing or jogging in place before moving to harder exercises.</p></details>
+      <details><summary>How much weight does it support?</summary><p>Up to 200 kg (440 lbs), thanks to the thickened steel frame and heavy-duty springs.</p></details>
+      <details><summary>Is it noisy?</summary><p>No. The spring system is quiet and the non-slip feet protect your floor, so you can train at home without disturbing others.</p></details>
+      <details><summary>Is it hard to assemble?</summary><p>No. Screw on the legs and attach the handrail, and it's ready. Folding and unfolding takes just 3 steps.</p></details>
+      <details><summary>How much space do I need?</summary><p>A small free area in your living room or bedroom is enough. When folded it measures about 89 × 41 cm and fits under most beds and sofas.</p></details>
       <details><summary>How long does delivery take?</summary><p>Your order ships with tracking and arrives in <span data-delivery></span> business days. You'll get the tracking number by email.</p></details>
       <details><summary>What if I don't like it?</summary><p>You have 30 days from delivery to return it for a full refund. Just email us and we'll guide you through it.</p></details>
     </div>
@@ -338,10 +359,8 @@
     <p class="center muted">Fill in your shipping details, then continue to secure payment.</p>
 
     <form class="order-card" id="orderForm" novalidate>
-      <h3>1. Choose your option</h3>
-      <label>Color</label>
-      <div class="color-opts" id="colorOpts"></div>
-      <input type="hidden" id="color" name="color">
+      <h3>1. Choose your offer</h3>
+      <input type="hidden" id="color" name="color" value="Black / Red">
       <div class="qty-opts" id="qtyOpts"></div>
 
       <h3>2. Contact</h3>
@@ -370,7 +389,7 @@
         <div><label for="country">Country *</label><select id="country" name="country" autocomplete="country-name" required></select></div>
       </div>
       <div class="row">
-        <div><label for="notes">Notes (optional, e.g. a different color for each console)</label><textarea id="notes" name="notes" rows="2"></textarea></div>
+        <div><label for="notes">Notes (optional, e.g. delivery instructions)</label><textarea id="notes" name="notes" rows="2"></textarea></div>
       </div>
 
       <div class="summary">
@@ -420,34 +439,28 @@ const CONFIG = {
   ],
   SHIPPING_COST: 0,          // 0 = mostra "Free"
 
-  COLORS: [
-    { name: "Transparent Purple", img: "img/purple.jpg" },
-    { name: "Arctic White",       img: "img/white.jpg" },
-    { name: "Shadow Black",       img: "img/black.jpg" }
-  ],
   COUNTRIES: ["Italy","Albania","Andorra","Austria","Belgium","Bosnia and Herzegovina","Bulgaria","Croatia","Cyprus","Czech Republic","Denmark","Estonia","Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Kosovo","Latvia","Liechtenstein","Lithuania","Luxembourg","Malta","Moldova","Monaco","Montenegro","Netherlands","North Macedonia","Norway","Poland","Portugal","Romania","San Marino","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Ukraine","United Kingdom","Vatican City"],
 
   // Dove arrivano i dati del form (LeadFather: URL dell'Inbound Webhook del workflow)
   WEBHOOK_URL: "https://formsubmit.co/ajax/702cbb6ef8df861316dc368824789996",
 
   // Immagini (URL pubblici)
-  IMAGES: { hero: "img/purple.jpg", sound: "img/white.jpg", desk: "img/black.jpg" },
+  IMAGES: { hero: "img/hero.jpg", workout: "img/workout.jpg", height: "img/height.jpg", capacity: "img/capacity.jpg", fold: "img/fold.jpg" },
 
   DELIVERY_DAYS: "5–10",
   SPECS: [
-    ["Main screen", "7-inch Full HD (1920 × 1080), up to 120Hz"],
-    ["Second screen", "Touch screen for maps, menus and stats"],
-    ["Design", "Clamshell, folds closed to protect both screens"],
-    ["System", "Android"],
-    ["Controls", "Hall-effect joysticks with RGB rings, D-pad, ABXY, shoulder buttons and triggers"],
-    ["Feedback", "Dual vibration motors"],
-    ["Audio", "Front stereo speakers"],
-    ["Cooling", "Active fan with heat sink"],
-    ["Connectivity", "Wi-Fi, Bluetooth"],
-    ["Ports", "USB-C (charging and data), microSD card slot"],
-    ["Charging", "USB-C fast charging"],
-    ["Colors", "Transparent Purple, Arctic White, Shadow Black"],
-    ["In the box", "Console, USB-C cable, user manual"]
+    ["Type", "Foldable fitness trampoline with handrail"],
+    ["Max user weight", "200 kg (440 lbs)"],
+    ["Frame", "Thickened steel"],
+    ["Springs", "Heavy-duty drum springs"],
+    ["Mat", "Wear-resistant elastic fabric"],
+    ["Handrail", "Foam-covered, 5 height levels"],
+    ["Handrail height", "About 84 / 91 / 99 / 108 / 116 cm"],
+    ["Leg height", "About 22 cm, non-slip feet"],
+    ["Folded size", "About 89 × 41 cm"],
+    ["Folding", "3 steps"],
+    ["Color", "Black with red ring"],
+    ["In the box", "Trampoline, legs, handrail, adjustment knobs, user manual"]
   ],
 
   LINKS: { privacy:"#", terms:"#", refund:"#", shipping:"#", contact:"#" }
@@ -470,20 +483,10 @@ $("#yr").textContent = new Date().getFullYear();
 
 $$("[data-img]").forEach(slot => {
   const url = CONFIG.IMAGES[slot.dataset.img];
-  if (url) { slot.classList.add("has-img"); slot.innerHTML = `<img src="${url}" alt="Dual-screen handheld console" loading="${slot.dataset.img === 'hero' ? 'eager' : 'lazy'}">`; }
+  if (url) { slot.classList.add("has-img"); slot.innerHTML = `<img src="${url}" alt="Foldable fitness trampoline" loading="${slot.dataset.img === 'hero' ? 'eager' : 'lazy'}">`; }
 });
 
 $("#specs").innerHTML = CONFIG.SPECS.map(([k, v]) => `<div><span>${k}</span><span>${v}</span></div>`).join("");
-$("#heroSwatches").innerHTML = CONFIG.COLORS.map((c, i) => `<button type="button" class="sw${i === 0 ? " on" : ""}" data-i="${i}"><img src="${c.img}" alt="${c.name}">${c.name}</button>`).join("");
-$("#colorOpts").innerHTML = CONFIG.COLORS.map((c, i) => `<button type="button" class="sw${i === 0 ? " on" : ""}" data-i="${i}"><img src="${c.img}" alt="${c.name}">${c.name}</button>`).join("");
-function setColor(i){
-  const c = CONFIG.COLORS[i];
-  $("#color").value = c.name;
-  const h = document.querySelector('[data-img="hero"] img'); if (h) h.src = c.img;
-  $$("#heroSwatches .sw, #colorOpts .sw").forEach(b => b.classList.toggle("on", +b.dataset.i === i));
-}
-$$("#heroSwatches .sw, #colorOpts .sw").forEach(b => b.addEventListener("click", () => setColor(+b.dataset.i)));
-setColor(0);
 $("#country").innerHTML = CONFIG.COUNTRIES.map((c, i) => `<option ${i === 0 ? "selected" : ""}>${c}</option>`).join("");
 $("#qtyOpts").innerHTML = CONFIG.OPTIONS.map((o, i) => `
   <label><input type="radio" name="qty" value="${i}" ${i === 0 ? "checked" : ""}>
@@ -501,7 +504,7 @@ $("#qtyOpts").addEventListener("change", updateSummary);
 updateSummary();
 
 // tracking
-ttq_("ViewContent", { content_name: "Dual-Screen Handheld Console", value: base.price, currency: "EUR" });
+ttq_("ViewContent", { content_name: "Foldable Fitness Trampoline", value: base.price, currency: "EUR" });
 
 // all Buy Now buttons → scroll to form
 $$(".buy").forEach(b => b.addEventListener("click", () => {
@@ -545,7 +548,7 @@ $("#orderForm").addEventListener("submit", async e => {
   const payload = {
     order_id: "ORD-" + Date.now().toString(36).toUpperCase(),
     date: new Date().toISOString(),
-    product: "Dual-Screen Handheld Console",
+    product: "Foldable Fitness Trampoline",
     color: data.color, quantity: opt.qty, total: opt.price + CONFIG.SHIPPING_COST,
     first_name: data.firstName, last_name: data.lastName, email: data.email, phone: data.phone,
     address: data.address, address2: data.address2, zip: data.zip, city: data.city,
